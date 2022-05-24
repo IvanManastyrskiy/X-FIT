@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-fit</title>
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="dm-overlay3" id="win3">
+        <div class="dm-table3">
+            <div class="dm-cell3">
+                <div class="dm-modal3">
+                    <a href="#close" class="close"></a>
+                    <h3>Совсем скоро . . .</h3>
+                    <div class="pl-left">
+                        <img src="">
+                    </div>
+                    <p>Вы не можете продолжить это действие</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header clubs-cart-header">
+        <div class="container">
+            <div class="header__content">
+                <a href="main.html"><img src="img/logo_header.svg" alt="Логотип" /></a>
+                <div class="header__menu menu">
+                    <div class="menu__list ">
+                        <li class="menu__item">
+                            <a href="clubs-cart-registration.html" class="menu__link main-link">Карты </a>
+                        </li>
+                        <li class="menu__item">
+                            <button class="menu__link stock">Акции</button>
+                        </li>
+                        <li class="menu__item">
+                            <button class="menu__link check">Чек апы</button>
+                        </li>
+                        <li class="menu__item">
+                            <button class="menu__link trainning">Тренировки</button>
+                        </li>
+                        <li class="menu__item">
+                            <button class="menu__link us">О Нас</button>
+                        </li>
+                    </div>
+                </div>
+                <a href="myCabinet.html">
+                <div class="account__btns.active">
+                    <img src="img/icons/people_account.png" class="imgAcc" alt="">
+                </div>
+                </a>
+            </div>
+
+        </div>
+    </header>
+    <div class="card_setting__block">
+        <div class="card_setting__block__leftSide">
+            <div class="card__image">
+                <img src="img/clubs_cart.png" alt="карточка">
+            </div>
+            <div class="card__price">
+
+                <h3>Итого:</h3>
+                <div class="price">
+                    <output id="total">0</output>
+                </div>
+            </div>
+        </div>
+        <div class="card_setting__block__rightSide">
+            <div class="card_options">
+                <div class="option__type">
+                    <h3>Длительность</h3>
+                    <h3>Заморозка</h3>
+                    <h3>Индивидуальные <br>
+                        тренировки</h3>
+                    <h3>Зал</h3>
+                </div>
+                <div class="amount">
+                    <div class="option__amount__setting">
+                        <div class="option__amount">
+                            <input class="optDay" type="radio" name="amDay" id="short_day" value="270">
+                            <label for="short_day">270</label>
+                        </div>
+                        <div class="option__amount">
+                            <input class="optDay" type="radio" name="amDay" id="medium_day" value="360">
+                            <label for="medium_day">360</label>
+                        </div>
+                        <div class="option__amount">
+                            <input class="optDay" type="radio" name="amDay" id="long_day" value="720">
+                            <label for="long_day">720</label>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    
+
+                    <div class="option__amount__setting__freeze">
+                        <div class="option__amount__freeze">
+                            <input class="optFreeze" type="radio" name="amFreeze" id="short_freeze" value="30">
+                            <label for="short_freeze">30</label>
+                        </div>
+                        <div class="option__amount__freeze">
+                            <input class="optFreeze" type="radio" name="amFreeze" id="medium_freeze" value="60">
+                            <label for="medium_freeze">60</label>
+                        </div>
+                        <div class="option__amount__freeze">
+                            <input class="optFreeze" type="radio" name="amFreeze" id="long_freeze" value="90">
+                            <label for="long_freeze">90</label>
+                        </div>
+                    </div>
+                    <div class="option__amount__setting__trainning correct">
+                        <div class="option__amount__trainning">
+                            <input class="optTrainning" type="radio" name="amTr" id="short_trainning" value="1">
+                            <label for="short_trainning">1</label>
+                        </div>
+                        <div class="option__amount__trainning">
+                            <input class="optTrainning" type="radio" name="amTr" id="medium_trainning" value="5">
+                            <label for="medium_trainning">5</label>
+                        </div>
+                        <div class="option__amount__trainning">
+                            <input class="optTrainning" type="radio" name="amTr" id="long_trainning" value="10">
+                            <label for="long_trainning">10</label>
+                        </div>
+                    </div>
+                    <div class="option__amount__setting__gym correct_two">
+                        <div class="option__amount__gym">
+                            <input class="optGym" type="radio" name="amGym" id="short_gym" value="1">
+                            <label for="short_gym">1</label>
+                        </div>
+                        <div class="option__amount__gym">
+                            <input class="optGym" type="radio" name="amGym" id="medium_gym" value="2">
+                            <label for="medium_gym">2</label>
+                        </div>
+                        <div class="option__amount__gym">
+                            <input class="optGym" type="radio" name="amGym" id="long_gym" value="3">
+                            <label for="long_gym">3</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div id='alrt'></div>
+    <div class="div_btn">
+
+        <button onclick="reg_card()" href="#win1" class="reg__btn">Оформить</button>
+
+    </div>
+    <div class="dm-overlay" id="win1">
+        <div class="dm-table">
+            <div class="dm-cell">
+                <div class="dm-modal">
+                    <a href="#close" class="close"></a>
+                    <h3>Вы будите переведены на главную страницу</h3>
+                    <div class="pl-left">
+                        <img src="">
+                    </div>
+                    <p>через 5 секунд . . . . .</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/card_calc.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+
+/* Форма входа */
+
+.signin__bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    pointer-events: none;
+    
+}
+
+.signin__modal{
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    background: #000000;
+    width: 600px;
+    min-height: 400px;
+    transition: 1s all;
+    transform: translate(50%,50%);
+    
+    border: 2px solid #8CF901;
+    color: #ffffff;
+    
+}
+
+.signin__navigation-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+
+}
+
+
+.signin__bg.active{
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+
+}
+/* .signin__modal.active{
+    transform: translate(100%,0%) scale(1);
+    transition: 1s all;
+
+} */
+
+
+.btn__form-signin {
+    padding: 10px;
+    width: 500px;
+    background: #262626;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    border: none;
+    display: block;
+    margin:auto;
+    margin-top: 30px;
+
+}
+
+.btn__form-signin:hover{
+    background: #8CF901;
+    color: #000000
+}
+
+.input-control__signin{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    width: 500px;
+    margin: auto;
+    
+
+}
+
+.main__title{
+     text-align: center;
+     padding: 10px 0;
+     color: #8CF901;
+}
+
+.input__signin{
+  box-shadow: 0 0 5px #8b8b8b;
+  margin-top: 15px;
+  
+}
+
+.input-control__signin input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 500px;
+    
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border:2px solid #09c372;
+}
+
+.input-control.error input {
+    border:2px solid #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 16px;
+    height: 13px;
+}
+
+
+
+label{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #ffffff;
+    
+} 
+
+.error_signin{
+    margin-left: 50px;
+    margin-top: 10px;
+    color: red;
+    font-weight: 500;
+}

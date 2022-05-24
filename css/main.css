@@ -1,0 +1,1211 @@
+@import url('http://fonts.cdnfonts.com/css/gotham-pro');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gotham Pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.background-block {
+    background: url('/img/background.png');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+
+.header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 9999990;
+}
+
+.clubs-cart-header {
+    background: rgba(0, 0, 0, 0.85);
+    position: relative;
+}
+
+.container {
+    width: 1760px;
+    margin: auto;
+}
+
+.header__content {
+    padding: 16px 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__item {
+    list-style: none;
+
+}
+
+.menu__link {
+    text-decoration: none;
+    margin: 0 0 0 115px;
+    color: white;
+    background: transparent;
+    font-size: 17px;
+    border: none;
+}
+
+.reglog__btns {
+    display: flex;
+
+   
+}
+
+
+
+
+
+.reglog__btns.active {
+    display: none;
+}
+
+.account__btns {
+    display: none;
+}
+
+.account__btns.active {
+    display: flex;
+    margin-right: 30px;
+    margin-left: 110px;
+}
+
+
+
+.signUp__btn {
+    border: none;
+    background-color: transparent;
+    color: #8CF901;
+    margin-right: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.signUp__btn img {
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+
+
+
+
+.exit__btn {
+    border: none;
+    background-color: transparent;
+    color: #8CF901;
+    margin-right: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.exit__btn img {
+    height: 30px;
+    width: 30px;
+
+
+}
+
+.account__btns {
+    border: none;
+    background-color: transparent;
+    color: #8CF901;
+    margin-right: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.account__btns img {
+    height: 35px;
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+.imgAcc {
+    height: 35px;
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+.signIn__btn {
+    border: none;
+    background-color: transparent;
+    color: white;
+    margin-left: 5px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.text__slesh {
+    color: white;
+}
+
+.menu__link:hover {
+    color: #8CF901;
+    transition: 0.1s;
+}
+
+.menu__link:focus {
+    padding-bottom: 3px;
+    border-bottom: #8CF901 2px solid;
+}
+
+.main-link {
+    padding-bottom: 3px;
+    border-bottom: #8CF901 2px solid;
+
+}
+
+.block__content {
+    position: absolute;
+    bottom: 90px;
+    width: 1229px;
+    height: 276px;
+    background: rgba(0, 0, 0, 0.67);
+}
+
+.block__content-info {
+    padding: 19px 81px;
+}
+
+.content-info__text-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 140%;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+}
+
+.content-info__text-sub {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    letter-spacing: 0.08em;
+    color: #8CF901;
+}
+
+.content-info__btn {
+    width: 207px;
+    height: 56px;
+    background: #8CF901;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.08em;
+    color: #000000;
+    border: none;
+    margin-top: 14px;
+    cursor: pointer;
+    transition: 0.1s;
+
+}
+
+.main {
+    background-color: black;
+
+}
+
+.container__main {
+    width: 1540px;
+    margin: auto;
+}
+
+.main-our__services {
+    padding: 110px 0px;
+}
+
+.our__services-title {
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 140%;
+    letter-spacing: 0.055em;
+
+
+}
+
+
+.our__services-blocks {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 71px;
+    cursor: pointer;
+}
+
+.our__services-block {
+    width: 734px;
+    height: 458px;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+
+
+
+}
+
+.main-our__services-content {
+    margin-top: 120px;
+}
+
+.our__services-block__bg {
+    background: linear-gradient(270deg, rgba(0, 211, 47, 0.1) -2.52%, #8CF901 48.01%, rgba(0, 211, 47, 0.11) 100.68%);
+    width: 734px;
+    height: 10px;
+    position: absolute;
+    bottom: -10px;
+
+}
+
+.gym {
+    background: url('/img/cards_block_image/fitness_gym.jpeg') no-repeat;
+    background-size: cover;
+
+}
+
+.our__services-block:hover {
+
+    animation: block-shadow 1.5s infinite ease;
+
+    transform: scale(110%);
+
+
+
+
+}
+
+.our__services-block:hover .our__services-block__bg {
+    visibility: hidden;
+
+
+}
+
+@keyframes block-shadow {
+    0% {
+        box-shadow: 0 0 10px 2px #8CF901;
+    }
+
+    50% {
+        box-shadow: 0 0 20px 2px #ffffff;
+    }
+
+    100% {
+        box-shadow: 0 0 10px 2px #8CF901;
+    }
+
+}
+
+.swimming-pool {
+    background: url('/img/cards_block_image/swimming_pool.jpeg') no-repeat;
+    background-size: cover;
+}
+
+.yoga {
+    background: url('/img/cards_block_image/yoga.jpeg') no-repeat;
+    background-size: cover;
+}
+
+.personal-training {
+    background: url('/img/cards_block_image/personal_trainnig.jpeg') no-repeat;
+    background-size: cover;
+}
+
+.fitnes-kids {
+    background: url('/img/cards_block_image/fitness_for_kids.jpeg') no-repeat;
+    background-size: cover;
+}
+
+.sports-section {
+    background: url('/img/cards_block_image/sports_club.jpeg') no-repeat;
+    background-size: cover;
+}
+
+.our__services-block__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 140%;
+    letter-spacing: 0.055em;
+    color: #FFFFFF;
+    bottom: 12px;
+    position: absolute;
+    left: 40px;
+}
+
+.our__services-block__btn {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 38px;
+    background: #8CF908;
+    bottom: 20px;
+    right: 24px;
+    cursor: pointer;
+
+}
+
+.block__btn-arrow {
+    width: 11.5px;
+    height: 15px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.block__btn-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.055em;
+    color: #000000;
+}
+
+.title__clubs {
+    margin-top: 20px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 140%;
+    letter-spacing: 0.055em;
+
+}
+
+.our__clubs {
+    width: 418px;
+    height: 602px;
+    color: #FFFFFF;
+    border: #8CF901 1px solid;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+
+
+.image__block {
+    margin: auto;
+    margin-top: 32px;
+    width: 351px;
+    height: 377px;
+    transition: 0.2s;
+
+}
+
+.one-gym {
+    background: url('/img/our_gyms/gym_1.jpeg') no-repeat;
+    background-size: cover;
+}
+
+.two-gym {
+    background: url('/img/our_gyms/gym_2.jpeg') no-repeat;
+    background-size: cover;
+}
+
+
+.three-gym {
+    background: url('/img/our_gyms/gym_3.jpeg') no-repeat;
+    background-size: cover;
+}
+
+.our__clubs h4 {
+    margin-top: 24px;
+    text-align: center;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+
+}
+
+.our__clubs h5 {
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.055em;
+
+
+}
+
+.our__clubs_line-block {
+
+    justify-content: space-between;
+    display: flex;
+    margin-top: 115px;
+}
+
+.our__clubs:hover {
+    background-color: #8CF901;
+    color: #000000;
+    margin-right: 30px;
+    margin-left: 30px;
+
+}
+
+.content-info__btn:hover {
+    transform: scale(110%);
+}
+
+.title__guest {
+    margin-top: 120px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 140%;
+    letter-spacing: 0.055em;
+    margin-bottom: 120px;
+}
+
+.aboutGuest {
+    width: 422px;
+    height: 538px;
+    color: #FFFFFF;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: 0.055em;
+}
+
+.aboutGuest__img {
+    width: 422px;
+    height: 422px;
+    border: 1px solid white;
+}
+
+.aboutGuest__sub-title {
+    margin-top: 28px;
+
+}
+
+.allGuest-block {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px 135px;
+    margin-bottom: 361px;
+
+}
+
+.morgen {
+    background: url('/img/people/morgenstern.jpeg') no-repeat;
+    background-size: cover;
+}
+
+.basta {
+    background: url('/img/people/basta.jpeg') no-repeat;
+    background-size: cover;
+}
+
+.ovechkin {
+    background: url('/img/people/ovechkin.png') no-repeat;
+    background-size: cover;
+}
+
+.timati {
+    background: url('/img/people/timati.jpeg') no-repeat;
+    background-size: cover;
+}
+
+.buzova {
+    background: url('/img/people/buzova.jpeg') no-repeat;
+    background-size: cover;
+}
+
+.habib {
+    background: url('/img/people/habib_nurmagomedov.jpeg') no-repeat;
+    background-size: cover;
+}
+
+footer {
+    background-color: #FFFFFF;
+    height: 467px;
+}
+
+.social-link {
+    display: flex;
+    margin: auto;
+    width: 476px;
+
+    justify-content: space-between;
+    padding-top: 0px;
+}
+
+.social-link img {
+    height: 90px;
+    width: 90px;
+    cursor: pointer;
+
+
+}
+
+.footer_subtext {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    width: 1609px;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 122px;
+    cursor: pointer;
+}
+
+.up__button img {
+    transform: rotate(-90deg);
+    width: 90px;
+    height: 90px;
+}
+
+.up__button {
+    padding-top: 40px;
+    padding-right: 40px;
+    text-align: right;
+    cursor: pointer;
+
+}
+
+.block__flex {
+    display: flex;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.card_setting__block {
+    margin: auto;
+    margin-top: 160px;
+    height: 449px;
+    width: 1526px;
+    display: flex;
+
+
+
+}
+
+.card__image img {
+    width: 524px;
+    height: 328px;
+}
+
+.card_setting__block__leftSide {
+    width: 524px;
+}
+
+.card__price {
+    display: flex;
+}
+
+.card_setting__block__rightSide {
+    margin-left: 135px;
+    width: 871px;
+
+}
+
+.card_options {
+    display: flex;
+}
+
+.option__type {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: 0.055em;
+
+}
+
+.option__type h3 {
+    margin-bottom: 70px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: 0.055em;
+}
+
+
+
+.option__amount input,
+.option__amount__gym input,
+.option__amount__freeze input,
+.option__amount__trainning input {
+    display: none;
+}
+
+
+.option__amount,
+.option__amount__freeze,
+.option__amount__gym,
+.option__amount__trainning {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: 0.055em;
+    height: 48px;
+}
+
+
+.option__amount label,
+.option__amount__freeze label,
+.option__amount__gym label,
+.option__amount__trainning label {
+    transition: 0.2s;
+    padding: 6px;
+    cursor: pointer;
+}
+
+
+.option__amount__setting,
+.option__amount__setting__trainning,
+.option__amount__setting__freeze,
+.option__amount__setting__gym {
+    margin-left: 35px;
+    display: flex;
+    width: 512px;
+    justify-content: space-between;
+    height: 50px;
+    margin-bottom: 65px;
+}
+
+.option__amount label:hover,
+.option__amount__freeze label:hover,
+.option__amount__trainning label:hover,
+.option__amount__gym label:hover {
+
+    background: #8CF9014A;
+    border-radius: 20px;
+
+}
+
+
+
+
+.option__amount input:checked+label,
+.option__amount__freeze input:checked+label,
+.option__amount__trainning input:checked+label,
+.option__amount__gym input:checked+label {
+
+    border-bottom: #8CF901 5px solid;
+
+}
+
+
+
+.correct {
+    margin-top: 87px;
+}
+
+.correct_two {
+    margin-top: 97px;
+}
+
+.card__price h3 {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: 0.055em;
+    margin-top: 70px;
+}
+
+.price {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: 0.055em;
+    background-color: #8CF9014A;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-top: 70px;
+
+}
+
+.reg__btn {
+    text-align: center;
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: 0.055em;
+    border-radius: 50px;
+    margin-top: 178px;
+    margin-bottom: 76px;
+    height: 99px;
+    width: 1540px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.div_btn {
+    text-align: center;
+}
+
+.reg__btn:hover {
+    transform: scale(105%);
+    box-shadow: 0 0 5px 5px #8CF901;
+    color: #8CF901;
+
+
+}
+
+#alrt {
+    background-color: #8CF9014A;
+    margin-top: 50px;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 60px;
+    right: 1600px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: 0.055em;
+}
+
+.dm-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 9999991;
+    ;
+}
+
+.dm-overlay:target {
+    display: block;
+
+}
+
+
+.dm-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+
+.dm-cell {
+    display: table-cell;
+    padding: 0 1em;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+.dm-modal {
+    display: inline-block;
+    padding: 20px;
+    color: #000000;
+
+    max-width: 50em;
+    background: #000000;
+    -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    text-align: left;
+    animation: modal-shadow 1.5s infinite ease;
+}
+
+
+
+
+.dm-modal2{
+    display:none ;
+}
+.dm-modal3{
+    display:none ;
+}
+
+
+
+.dm-modal2.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999991;
+    display: block;
+    padding: 40px;
+    position: fixed;
+    margin-left: 1590px;
+    margin-top: 950px;
+    animation: my-animation 4s ease;
+    max-width: 50em;
+    background: #000000;
+    color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    border: #8CF901 2px solid;
+    transition: 1s ease;
+}
+
+.dm-modal3.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999991;
+    display: block;
+    padding: 40px;
+    position: fixed;
+    margin-left: 1590px;
+    margin-top: 950px;
+    animation: my-animation 4s ease;
+    max-width: 50em;
+    background: #000000;
+    color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    border: #8CF901 2px solid;
+}
+
+@keyframes my-animation {
+    0% {
+        opacity: 0;
+        margin-top: 1050px;
+    }
+
+    10% {
+        opacity: 1;
+        margin-top: 950px;
+    }
+    75% {
+        opacity: 1;
+        margin-top: 950px;
+    }
+   100% {
+        opacity: 0;
+        margin-top: 1050px;
+    }
+    
+}
+
+
+
+
+@keyframes modal-shadow {
+    0% {
+        box-shadow: 0 0 10px 2px #8CF901;
+    }
+
+    50% {
+        box-shadow: 0 0 80px 2px #8CF901;
+        color: #8CF901;
+
+
+
+    }
+
+    100% {
+        box-shadow: 0 0 10px 2px #8CF901;
+    }
+
+}
+
+.myCabinet__header {
+    background: rgba(0, 0, 0, 0.85);
+    position: relative;
+    border-bottom: 1px #8CF901 solid;
+}
+
+.infoAboutMe__block {
+    margin: auto;
+    width: 1529px;
+    margin-top: 182px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.infoAboutMe__leftSide {
+    width: 303px;
+
+
+
+}
+
+.avatar img {
+    width: 303px;
+    height: 300px;
+
+
+}
+
+.myName {
+    color: white;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.055em;
+    margin-top: 20px;
+}
+
+.infoAboutMe__rightSide {
+
+    width: 1000px;
+    margin-top: 136px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    animation: visual 1s ease;
+
+}
+
+.info__block {
+    height: 118px;
+    width: 186px;
+    
+
+}
+
+
+@keyframes visual{
+    0% {
+
+        opacity: 0;
+    }
+
+    100% {
+
+        opacity: 1;
+    }
+
+}
+
+.infTitle {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.055em;
+    color: #FFFFFF;
+}
+
+.infValue {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.055em;
+    color: #8CF901;
+    background: rgba(140, 249, 1, 0.18);
+    border-radius: 95px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+.myRegFile {
+    margin: auto;
+    width: 280px;
+    height: 247px;
+    margin-top: 140px;
+    text-align: center;
+
+}
+
+.myRegFile_tittle {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.055em;
+
+    color: #FFFFFF;
+}
+
+.openEye img {
+    width: 64px;
+    height: 64px
+}
+
+.openEye {
+    margin: auto;
+    background: none;
+    cursor: pointer;
+    margin-top: 40px;
+
+}
+
+.myRegFile_date h3 {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.055em;
+
+    color: #FFFFFF;
+}
+
+.myRegFile_date output {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.055em;
+    margin-left: 5px;
+
+    color: #8CF901;
+}
+
+.logPassblock {
+    margin-top: 10px;
+    display: flex;
+
+
+}
+
+.logPassblock h3 {
+
+
+    min-width: 150px;
+}
+
+.logPassblock output {}
+
+.controlEye.active {
+    opacity: 0;
+}
+
+.controlEyeO.active {
+    opacity: 1;
+    position: absolute;
+    top: 819px;
+    left: 403px
+}
+
+.controlEyeO {
+    opacity: 0;
+}
+.checkTitle{
+    position: absolute;
+width: 1543px;
+height: 160px;
+left: 297px;
+top: 210px;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+text-align: center;
+letter-spacing: 0.165em;
+
+color: #000000;
+}
+.checkUp {
+    border: 2px solid black;
+    width: 459px;
+    height: 315px;
+    font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 140%;
+letter-spacing: 0.055em;
+background-color: transparent;
+cursor: pointer;
+transition: transform  0.5s ease-in-out;
+transition: 0.5s;
+
+}
+.checkUp__block{
+    margin: auto;
+    justify-content: space-around;
+    display: flex;
+    width: 1700px;
+    margin-top: 400px;
+
+}
+.checkUp p{
+    margin-top: 42px;
+
+}
+.checkUp:hover{
+    background-color: #8CF901;
+   transform: scale(120%);
+
+}
+.checkUp:active{
+    background-color: rgb(98, 0, 255);
+   transform: scale(100%);
+
+}
