@@ -181,7 +181,7 @@ function reg_card() {
         total.value = currUser.card;
         setTimeout(function () {
             window.location.href = '#win1';
-        }, 1000);
+        }, 100);
         setTimeout(function () {
             window.location.href = 'main.html';
         }, 5000);

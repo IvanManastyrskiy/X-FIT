@@ -68,10 +68,10 @@ genetics.addEventListener('click', function () {
         localStorage.setItem(`currUser`, JSON.stringify(user))
         setTimeout(function () {
             window.location.href = '#win1';
-        }, 1000);
+        }, 1);
         setTimeout(function () {
             window.location.href = 'main.html';
-        }, 5000);
+        }, 4000);
     }
 
     else {
@@ -98,10 +98,10 @@ checkme.addEventListener('click', function () {
         localStorage.setItem(`currUser`, JSON.stringify(user))
         setTimeout(function () {
             window.location.href = '#win1';
-        }, 1000);
+        }, 1);
         setTimeout(function () {
             window.location.href = 'main.html';
-        }, 5000);
+        }, 4000);
     }
     else {
         alert("вы уже записаны на чек-ап")
@@ -127,10 +127,10 @@ bioniq.addEventListener('click', function () {
         
         setTimeout(function () {
             window.location.href = '#win1';
-        }, 1000);
+        }, 1);
         setTimeout(function () {
             window.location.href = 'main.html';
-        }, 5000);
+        }, 4000);
     }
     else {
         alert("вы уже записаны на чек-ап")
