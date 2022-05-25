@@ -66,3 +66,9 @@ usBtn.addEventListener('click',function(){
         win3.classList.remove('active')
     }, 4000);
 })
+// const gay = document.querySelector('.gay')
+// gay.addEventListener('change',function(){
+//     console.log(gay.value)
+//     document.getElementById('avatar').src=gay.value
+
+// })
