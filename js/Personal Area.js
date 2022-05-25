@@ -20,6 +20,7 @@ let gym = JSON.parse(localStorage.currUser).gym
 let card = JSON.parse(localStorage.currUser).card
 let check = JSON.parse(localStorage.currUser).check
 let win3 = document.querySelector('.dm-modal3');
+let win5 = document.querySelector('.dm-modal5');
 NameOut.value = name
 CardOut.value = card
 AgeOut.value = age
@@ -45,7 +46,13 @@ checkBtn.addEventListener('click',function(){
         window.location = '/check-up.html'
     }
     else {
-        alert("карта не оформлена")
+        setTimeout(function () {
+            win5.classList.add('active')
+       
+        }, 10);
+        setTimeout(function () {
+            win5.classList.remove('active')
+        }, 4000);
     }
 })
 trainningBtn.addEventListener('click',function(){

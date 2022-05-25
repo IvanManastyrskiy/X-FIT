@@ -8,6 +8,8 @@ const stockBtn = document.querySelector(".menu__link.stock");
 const trainningBtn = document.querySelector(".menu__link.trainning");
 const usBtn = document.querySelector(".menu__link.us");
 let win3 = document.querySelector('.dm-modal3');
+let win4 = document.querySelector('.dm-modal4');
+
 
 
 stockBtn.addEventListener('click', function () {
@@ -75,7 +77,14 @@ genetics.addEventListener('click', function () {
     }
 
     else {
-        alert("вы уже записаны на чек-ап")
+  
+        setTimeout(function () {
+            win4.classList.add('active')
+    
+        }, 10);
+        setTimeout(function () {
+            win4.classList.remove('active')
+        }, 4000);
         
     }
 
@@ -104,7 +113,13 @@ checkme.addEventListener('click', function () {
         }, 4000);
     }
     else {
-        alert("вы уже записаны на чек-ап")
+        setTimeout(function () {
+            win4.classList.add('active')
+    
+        }, 10);
+        setTimeout(function () {
+            win4.classList.remove('active')
+        }, 4000);
     }
 
 })
@@ -133,7 +148,13 @@ bioniq.addEventListener('click', function () {
         }, 4000);
     }
     else {
-        alert("вы уже записаны на чек-ап")
+        setTimeout(function () {
+            win4.classList.add('active')
+    
+        }, 10);
+        setTimeout(function () {
+            win4.classList.remove('active')
+        }, 4000);
     }
 
 })

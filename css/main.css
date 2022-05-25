@@ -881,7 +881,12 @@ html {
 .dm-modal3{
     display:none ;
 }
-
+.dm-modal4{
+    display:none ;
+}
+.dm-modal5{
+    display:none ;
+}
 
 
 .dm-modal2.active {
@@ -922,7 +927,42 @@ html {
     font-size: 16px;
     border: #8CF901 2px solid;
 }
-
+.dm-modal4.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999991;
+    display: block;
+    padding: 40px;
+    position: fixed;
+    margin-left: 1930px;
+    margin-top: 950px;
+    animation: my-animation 4s ease;
+    max-width: 50em;
+    background: #000000;
+    color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    border: #8CF901 2px solid;
+}
+.dm-modal5.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999991;
+    display: block;
+    padding: 40px;
+    position: fixed;
+    margin-left: 1930px;
+    margin-top: 950px;
+    animation: my-animation 4s ease;
+    max-width: 50em;
+    background: #000000;
+    color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    border: #8CF901 2px solid;
+}
 @keyframes my-animation {
     0% {
         opacity: 0;
