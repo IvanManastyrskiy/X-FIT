@@ -1270,6 +1270,12 @@ body{
     height: 1300px;
 }
 
+.controlEyeO.active{
+
+top:840px;
+    
+}
+
 .signin__bg.active{
     height: 1300px;
 }
