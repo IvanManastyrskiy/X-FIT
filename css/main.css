@@ -39,8 +39,9 @@ a {
 
 .header__content {
     padding: 16px 78px;
+justify-content: center;
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
 
 
@@ -50,6 +51,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    width: 1000px;
 }
 
 .menu__item {
@@ -68,6 +71,8 @@ a {
 
 .reglog__btns {
     display: flex;
+    
+    
 
    
 }
@@ -186,6 +191,14 @@ a {
 
 }
 
+.header__menu {
+margin-right: 200px;
+margin-left: 200px;
+}
+.card{
+    margin-left: 0px;
+   
+}
 .block__content {
     position: absolute;
     bottom: 90px;
@@ -1249,6 +1262,7 @@ transition: 0.5s;
    transform: scale(100%);
 
 }
+@media (min-width: 1920px) {
 body{
     zoom: 80%;
 }
@@ -1259,3 +1273,59 @@ body{
 .signin__bg.active{
     height: 1300px;
 }
+}
+@media (max-width: 1440px) {
+    body{
+        zoom: 62%;
+    }
+    
+    @keyframes my-animation {
+        0% {
+            width: 500px;
+            margin-left: 1740px;
+           
+            opacity: 0;
+            margin-top: 1350px;
+            
+        }
+    
+        10% {
+            width: 500px;
+       
+            margin-left: 1740px;
+            opacity: 1;
+            margin-top: 1045px;
+            
+        }
+        75% {
+            width: 500px;
+
+            
+           margin-left: 1740px;
+            opacity: 1;
+            margin-top: 1045px;
+           
+        }
+       100% {
+        width: 500px;
+        
+        margin-left: 1740px;
+            opacity: 0;
+            margin-top: 1350px;
+           
+        }
+    
+    }
+
+    .signin__bg.active{
+
+        height: 1400px;
+ 
+    }
+   
+    .signin__modal.active{
+
+    }
+
+
+    }
