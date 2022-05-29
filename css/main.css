@@ -39,9 +39,9 @@ a {
 
 .header__content {
     padding: 16px 78px;
-justify-content: center;
+    justify-content: center;
     display: flex;
-    
+
     align-items: center;
 
 
@@ -51,7 +51,7 @@ justify-content: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     width: 1000px;
 }
 
@@ -71,10 +71,10 @@ justify-content: center;
 
 .reglog__btns {
     display: flex;
-    
-    
 
-   
+
+
+
 }
 
 
@@ -148,6 +148,7 @@ justify-content: center;
     border: 1px solid white;
     border-radius: 50px;
 }
+
 .imgAcc {
     height: 35px;
     width: 35px;
@@ -192,13 +193,15 @@ justify-content: center;
 }
 
 .header__menu {
-margin-right: 200px;
-margin-left: 200px;
+    margin-right: 200px;
+    margin-left: 200px;
 }
-.card{
+
+.card {
     margin-left: 0px;
-   
+
 }
+
 .block__content {
     position: absolute;
     bottom: 90px;
@@ -888,17 +891,20 @@ html {
 
 
 
-.dm-modal2{
-    display:none ;
+.dm-modal2 {
+    display: none;
 }
-.dm-modal3{
-    display:none ;
+
+.dm-modal3 {
+    display: none;
 }
-.dm-modal4{
-    display:none ;
+
+.dm-modal4 {
+    display: none;
 }
-.dm-modal5{
-    display:none ;
+
+.dm-modal5 {
+    display: none;
 }
 
 
@@ -940,6 +946,7 @@ html {
     font-size: 16px;
     border: #8CF901 2px solid;
 }
+
 .dm-modal4.active {
     position: fixed;
     top: 0;
@@ -958,6 +965,7 @@ html {
     font-size: 16px;
     border: #8CF901 2px solid;
 }
+
 .dm-modal5.active {
     position: fixed;
     top: 0;
@@ -976,6 +984,7 @@ html {
     font-size: 16px;
     border: #8CF901 2px solid;
 }
+
 @keyframes my-animation {
     0% {
         opacity: 0;
@@ -986,15 +995,17 @@ html {
         opacity: 1;
         margin-top: 1050px;
     }
+
     75% {
         opacity: 1;
         margin-top: 1050px;
     }
-   100% {
+
+    100% {
         opacity: 0;
         margin-top: 1350px;
     }
-    
+
 }
 
 
@@ -1074,12 +1085,12 @@ html {
 .info__block {
     height: 118px;
     width: 186px;
-    
+
 
 }
 
 
-@keyframes visual{
+@keyframes visual {
     0% {
 
         opacity: 0;
@@ -1207,40 +1218,43 @@ html {
 .controlEyeO {
     opacity: 0;
 }
-.checkTitle{
+
+.checkTitle {
     position: absolute;
-width: 1543px;
-height: 160px;
-left: 297px;
-top: 210px;
+    width: 1543px;
+    height: 160px;
+    left: 297px;
+    top: 210px;
 
-font-family: 'Gotham Pro';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 32px;
-text-align: center;
-letter-spacing: 0.165em;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.165em;
 
-color: #000000;
+    color: #000000;
 }
+
 .checkUp {
     border: 2px solid black;
     width: 459px;
     height: 315px;
     font-family: 'Gotham Pro';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 140%;
-letter-spacing: 0.055em;
-background-color: transparent;
-cursor: pointer;
-transition: transform  0.5s ease-in-out;
-transition: 0.5s;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.055em;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    transition: 0.5s;
 
 }
-.checkUp__block{
+
+.checkUp__block {
     margin: auto;
     justify-content: space-around;
     display: flex;
@@ -1248,90 +1262,120 @@ transition: 0.5s;
     margin-top: 400px;
 
 }
-.checkUp p{
+
+.checkUp p {
     margin-top: 42px;
 
 }
-.checkUp:hover{
+
+.checkUp:hover {
     background-color: #8CF901;
-   transform: scale(120%);
+    transform: scale(120%);
 
 }
-.checkUp:active{
+
+.checkUp:active {
     background-color: rgb(98, 0, 255);
-   transform: scale(100%);
+    transform: scale(100%);
 
 }
+
 @media (min-width: 1920px) {
-body{
-    zoom: 80%;
-}
-.signup__bg.active{
-    height: 1300px;
+    body {
+        zoom: 80%;
+    }
+
+    .signup__bg.active {
+        height: 1300px;
+    }
+
+    .controlEyeO.active {
+
+        top: 840px;
+
+    }
+
+    .signin__bg.active {
+        height: 1300px;
+    }
 }
 
-.controlEyeO.active{
-
-top:840px;
-    
-}
-
-.signin__bg.active{
-    height: 1300px;
-}
-}
 @media (max-width: 1440px) {
-    body{
+    body {
         zoom: 62%;
     }
-    
+
     @keyframes my-animation {
         0% {
             width: 500px;
             margin-left: 1740px;
-           
+
             opacity: 0;
             margin-top: 1350px;
-            
+
         }
-    
+
         10% {
             width: 500px;
-       
+
             margin-left: 1740px;
             opacity: 1;
             margin-top: 1045px;
-            
+
         }
+
         75% {
             width: 500px;
 
-            
-           margin-left: 1740px;
+
+            margin-left: 1740px;
             opacity: 1;
             margin-top: 1045px;
-           
+
         }
-       100% {
-        width: 500px;
-        
-        margin-left: 1740px;
+
+        100% {
+            width: 500px;
+
+            margin-left: 1740px;
             opacity: 0;
             margin-top: 1350px;
-           
-        }
-    
-    }
 
-    .signin__bg.active{
+        }
+
+    }
+    .signin__bg{
+        
+    }
+    .signin__bg.active {
 
         height: 1400px;
+
+    }
+    .signin__modal {
+        bottom: 60%;
+   }
+    .signin__modal.active {
+         bottom: 60%;
+    }
+  
+    .signup__bg.active {
+
+        height: 1400px;
+
+    }
+    .signup__modal {
+        bottom: 60%;
+   }
+    .signup__modal.active {
+         bottom: 60%;
+    }
  
-    }
-   
-    .signin__modal.active{
 
+    .controlEyeO.active {
+        left: 484px;
+        top: 819px;
     }
 
 
-    }
+}

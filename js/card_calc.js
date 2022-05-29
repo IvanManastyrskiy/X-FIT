@@ -1,8 +1,3 @@
-const duration = Array.from(document.querySelectorAll(".optDay"));
-const freeze = Array.from(document.querySelectorAll(".optFreeze"));
-const training = Array.from(document.querySelectorAll(".optTrainning"));
-const gym = Array.from(document.querySelectorAll(".optGym"));
-const total = document.querySelector("#total");
 let currUser = JSON.parse(localStorage.getItem('currUser'));
 let allUsers = localStorage.getItem('users') ? JSON.parse(localStorage.getItem('users')) : [];
 const stockBtn = document.querySelector(".menu__link.stock");
@@ -10,7 +5,10 @@ const checkBtn = document.querySelector(".menu__link.check");
 const trainningBtn = document.querySelector(".menu__link.trainning");
 const usBtn = document.querySelector(".menu__link.us");
 let win3 = document.querySelector('.dm-modal3');
+let win5 = document.querySelector('.dm-modal5');
 
+
+// всплывающая модалка (совсем скоро)
 
 stockBtn.addEventListener('click',function(){
     setTimeout(function () {
@@ -21,15 +19,27 @@ stockBtn.addEventListener('click',function(){
         win3.classList.remove('active')
     }, 4000);
 })
+
+// проверка на наличие оформления карты перед открытием чекапов / переход на чек апы
+
 checkBtn.addEventListener('click',function(){
     if(localStorage.getItem('currUser') !== null  & JSON.parse(localStorage.currUser).card == "Оформлена"){
         
         window.location = '/check-up.html'
     }
     else {
-        alert("карта не оформлена")
+        setTimeout(function () {
+            win5.classList.add('active')
+       
+        }, 10);
+        setTimeout(function () {
+            win5.classList.remove('active')
+        }, 4000);
     }
 })
+
+// всплывающая модалка (совсем скоро)
+
 trainningBtn.addEventListener('click',function(){
     setTimeout(function () {
         win3.classList.add('active')
@@ -39,6 +49,9 @@ trainningBtn.addEventListener('click',function(){
         win3.classList.remove('active')
     }, 4000);
 })
+
+// всплывающая модалка (совсем скоро)
+
 usBtn.addEventListener('click',function(){
     setTimeout(function () {
         win3.classList.add('active')
@@ -52,7 +65,11 @@ usBtn.addEventListener('click',function(){
 
 
 
-
+const duration = Array.from(document.querySelectorAll(".optDay"));
+const freeze = Array.from(document.querySelectorAll(".optFreeze"));
+const training = Array.from(document.querySelectorAll(".optTrainning"));
+const gym = Array.from(document.querySelectorAll(".optGym"));
+const total = document.querySelector("#total");
 
 
 /*--Длительность--*/

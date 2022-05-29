@@ -6,18 +6,18 @@ let users = JSON.parse(localStorage.getItem('users'));
 let isLoginTrue = false;
 
 openSignin.forEach((elem) => {
-    elem.addEventListener('click',function(event){
+    elem.addEventListener('click', function (event) {
 
         event.preventDefault()
         signinBg.classList.add('active')
         signinModal.classList.add('active')
         signupBg.classList.remove('active')
         signupModal.classList.remove('active')
-    
+
     })
 })
 
-closeSignin.addEventListener('click',function(){
+closeSignin.addEventListener('click', function () {
     signinBg.classList.remove('active')
     signinModal.classList.remove('active')
 })
@@ -53,8 +53,9 @@ signinBtn.addEventListener('click', function(e){
     if(users !== null){
     users.forEach((users) => {
         if (users.name == username){
-            isLoginTrue = true;
+            
             if (users.password == password){
+                setError(password, '');
                 localStorage.setItem(`currUser`, JSON.stringify(users));
                 window.location = '/myCabinet.html'
             } else{
@@ -71,11 +72,10 @@ signinBtn.addEventListener('click', function(e){
 
 
 
-
 let reglog = document.querySelector('.reglog__btns')
 let acc = document.querySelector('.account__btns')
-function examination(){
-    if (localStorage.getItem('currUser') !== null){
+function examination() {
+    if (localStorage.getItem('currUser') !== null) {
         reglog.classList.add('active')
         acc.classList.add('active')
 

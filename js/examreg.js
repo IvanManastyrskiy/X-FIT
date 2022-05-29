@@ -8,6 +8,7 @@ let choose = document.querySelector('.our__services-blocks');
 let gyms = document.querySelector('.our__clubs_line-block');
 let win2 = document.querySelector('.dm-modal2');
 let win3 = document.querySelector('.dm-modal3');
+let win5 = document.querySelector('.dm-modal5');
 
 
 
@@ -44,6 +45,7 @@ stock.addEventListener('click', function () {
         }, 10);
         setTimeout(function () {
             win3.classList.remove('active')
+     
         }, 4000);
     }
 })
@@ -57,6 +59,7 @@ check.addEventListener('click', function () {
         }, 10);
         setTimeout(function () {
             win2.classList.remove('active')
+            
         }, 4000);
 
         
@@ -67,7 +70,13 @@ check.addEventListener('click', function () {
         window.location = '/check-up.html'
     }
     else {
-        alert("карта не оформлена")
+        setTimeout(function () {
+            win5.classList.add('active')
+       
+        }, 10);
+        setTimeout(function () {
+            win5.classList.remove('active')
+        }, 4000);
     }
 })
 

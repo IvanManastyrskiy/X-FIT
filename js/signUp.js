@@ -71,11 +71,33 @@ form.addEventListener('submit', e => {
         const emailValue = email.value;
         const passwordValue = password.value;
         const ageValue = age.value
+        let verification = ""
+      
+        users.every((users) => {
+            
+            if (users.email == emailValue) {
+                verification = "busy";
+                return false
+                
+                
+            }
+            else{
+                verification = ""
+                return true
+            }
+        })
+
+
+
+
+
 
         if (usernameValue === '') {
             setError(username, 'Это обязательное поле');
             isError = true
         }
+
+        
 
         else {
             setSuccess(username);
@@ -89,32 +111,37 @@ form.addEventListener('submit', e => {
         } else if (!isValidEmail(emailValue)) {
             setError(email, 'Пожалуйста, введи корректный e-mail');
             isError = true
+        }
         
-      
+            else if (verification === "busy") {
+
+                setError(email, 'Эта почта уже использована');
+                isError = true
+            
 
 
         }
         else {
-                // setSuccess(email);
+            setSuccess(email);
 
 
-            }
+        }
 
 
-        
-           
-    
-if (ageValue === '') {
-                setError(age, 'Это обязательное поле');
-                isError = true
-            }
-            else if (ageValue < 16) {
-                setError(age, 'Ваш возраст не может быть меньше 16')
-                isError = true
-            } else {
-                setSuccess(age);
 
-            }
+
+
+        if (ageValue === '') {
+            setError(age, 'Это обязательное поле');
+            isError = true
+        }
+        else if (ageValue < 16) {
+            setError(age, 'Ваш возраст не может быть меньше 16')
+            isError = true
+        } else {
+            setSuccess(age);
+
+        }
 
         if (passwordValue === '') {
             setError(password, 'Пожалуйста, введи корректный пароль');
@@ -127,7 +154,7 @@ if (ageValue === '') {
 
         }
 
-       
+
 
     }
 
