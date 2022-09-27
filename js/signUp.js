@@ -73,19 +73,7 @@ form.addEventListener('submit', e => {
         const ageValue = age.value
         let verification = ""
       
-        users.every((users) => {
-            
-            if (users.email == emailValue) {
-                verification = "busy";
-                return false
-                
-                
-            }
-            else{
-                verification = ""
-                return true
-            }
-        })
+       
 
 
 
