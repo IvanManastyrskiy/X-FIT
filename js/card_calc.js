@@ -200,7 +200,7 @@ function reg_card() {
             window.location.href = '#win1';
         }, 100);
         setTimeout(function () {
-            window.location.href = 'main.html';
+            window.location.href = 'index.html';
         }, 5000);
     }
     

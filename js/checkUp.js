@@ -72,7 +72,7 @@ genetics.addEventListener('click', function () {
             window.location.href = '#win1';
         }, 1);
         setTimeout(function () {
-            window.location.href = 'main.html';
+            window.location.href = 'index.html';
         }, 4000);
     }
 
@@ -109,7 +109,7 @@ checkme.addEventListener('click', function () {
             window.location.href = '#win1';
         }, 1);
         setTimeout(function () {
-            window.location.href = 'main.html';
+            window.location.href = 'index.html';
         }, 4000);
     }
     else {
@@ -144,7 +144,7 @@ bioniq.addEventListener('click', function () {
             window.location.href = '#win1';
         }, 1);
         setTimeout(function () {
-            window.location.href = 'main.html';
+            window.location.href = 'index.html';
         }, 4000);
     }
     else {
