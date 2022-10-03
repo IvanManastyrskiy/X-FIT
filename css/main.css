@@ -1282,7 +1282,8 @@ html {
 
 @media (min-width: 1920px) {
     body {
-        zoom: 80%;
+        zoom: 90%;
+        
     }
 
     .signup__bg.active {
@@ -1291,7 +1292,8 @@ html {
 
     .controlEyeO.active {
 
-        top: 840px;
+        top: 819px;
+        left: 390px;
 
     }
 
@@ -1300,11 +1302,22 @@ html {
     }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1440px) and (min-width:376px) {
     body {
         zoom: 62%;
+        
     }
-
+    .main{
+        background-color: rgb(100, 122, 0);
+    }
+    
+@media (max-width: 375px) { 
+    .background-block{
+        background: url(none);
+    }
+     }
+    
+    
     @keyframes my-animation {
         0% {
             width: 500px;
